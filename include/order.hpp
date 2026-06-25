@@ -1,6 +1,7 @@
 #pragma once
 #ifndef ORDER_HPP
 #define ORDER_HPP
+#include <cstdint>
 #include <string>
 #include "utils.hpp"
 
