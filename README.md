@@ -109,3 +109,7 @@ exchange-simulator/
 ├── README.md
 └── LICENSE
 ```
+
+
+using BidBook = SideBook<std::greater<Price>>;
+using AskBook = SideBook<std::less<Price>>;
