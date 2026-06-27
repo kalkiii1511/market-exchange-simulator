@@ -28,6 +28,8 @@ public:
 
     OrderLocation &getOrderLocation(OrderId orderId);
 
+    const OrderLocation &getOrderLocation(OrderId orderId) const;
+
     void removeOrderIndex(OrderId orderId);
 
     void addOrderIndex(OrderId orderId,const OrderLocation &location);

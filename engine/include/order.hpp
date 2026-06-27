@@ -19,13 +19,15 @@ private:
 public:
 
     Order(uint64_t Id,std::string Side,uint32_t size,std::string company,std::string Type,Price money);
-    std::string getSide();
-    std::string getSymbol();
-    uint32_t getQuantity();
-    uint64_t getId();
-    std::string getType();
-    Price getPrice();
-    uint32_t getRemaining();
+    const std::string &getSide() const;
+    const std::string &getSymbol() const;
+    uint32_t getQuantity() const;
+    uint64_t getId() const;
+    const std::string &getType() const;
+    Price getPrice() const;
+    uint32_t getRemaining() const;
+    void fill(uint32_t filledQuantity);
+    bool isFilled() const;
 };
 
 

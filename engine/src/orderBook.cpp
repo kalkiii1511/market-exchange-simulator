@@ -89,6 +89,11 @@ OrderLocation &OrderBook::getOrderLocation(OrderId orderId)
     return orderIndex.at(orderId);
 }
 
+const OrderLocation &OrderBook::getOrderLocation(OrderId orderId) const
+{
+    return orderIndex.at(orderId);
+}
+
 void OrderBook::removeOrderIndex(OrderId orderId)
 {
     orderIndex.erase(orderId);
